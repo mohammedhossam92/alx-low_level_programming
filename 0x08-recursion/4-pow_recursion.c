@@ -3,6 +3,7 @@
  * _pow_recursion - function the get the value x powered by y
  * @x: base integer
  * @y:exponent
+ * Return: return the value of result
 */
 int _pow_recursion(int x, int y)
 {
