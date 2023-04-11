@@ -3,7 +3,7 @@
  *create_array - function
  *@size: size of array
  *@c: character to initialize
- *Return: return i
+ *Return: return n
 */
 
 char *create_array(unsigned int size, char c)
