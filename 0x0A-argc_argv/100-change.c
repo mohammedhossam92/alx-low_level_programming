@@ -11,15 +11,10 @@ int main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		int i;
-		int least;
-		int money;
-
-		i = 0;
-		least = 0;
-		money = atoi(argv[1]);
-
-		int cents[] = {25, 10, 5, 2, 1};
+		int i = 0;
+		int least = 0;
+		int money = atoi(argv[1]);
+		int cents[5] = {25, 10, 5, 2, 1};
 
 		for (i = 0; i < 5; i++)
 		{
