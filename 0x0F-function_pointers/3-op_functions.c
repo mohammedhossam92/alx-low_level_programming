@@ -49,3 +49,14 @@ int op_mod(int a, int b)
 {
 	return (a % b);
 }
+
+/**
+ *op_mul - function to multiply
+ *@a: first int
+ *@b: second int
+ *Return: the result
+*/
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
