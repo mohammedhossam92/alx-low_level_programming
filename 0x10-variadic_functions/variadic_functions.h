@@ -6,6 +6,9 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+#include <stdarg.h>
+#include <stdio.h>
+
 
 
 #endif
