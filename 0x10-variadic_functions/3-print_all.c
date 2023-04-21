@@ -77,12 +77,12 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == tokens[y].token[0])
 			{
-				token[y].f(separator, ap);
+				tokens[y].f(separator, ap);
 				separator = ", ";
 			}
 			y++;
 		}
-		i++
+		i++;
 	}
 	printf("\n");
 	va_end(ap);
