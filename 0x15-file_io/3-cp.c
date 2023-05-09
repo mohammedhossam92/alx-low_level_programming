@@ -1,10 +1,5 @@
 #include "main.h"
 
-#define USAGE "usage: cp file_from file_to\n"
-#define ERR_NOREAD "Error: can't read from file %s\n"
-#define ERR_NOWRITE "Error: can't write to %s\n"
-#define ERR_NOCLOSE "Error: can't close file %d\n"
-#define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 /**
 *main - program
 *@ac: argument count
@@ -14,7 +9,7 @@
 */
 
 int main(int ac, char **av)
-
+{
 	int from_fd = 0;
 	int to_fd = 0;
 	ssize_t b;
@@ -37,7 +32,7 @@ int main(int ac, char **av)
 	/*c*/
 	while ((b = read(from_fd, buf, READ_BUF_SIZE)) > 0)
 		if (write(to_fd, buf, b) != b)
-			dprintf(STDERR_FILENO, ERR_NOWRITE, AV[2]), exit (99);
+			dprintf(STDERR_FILENO, ERR_NOWRITE, av[2]), exit (99);
 	if (b == -1)
 		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 
@@ -52,4 +47,4 @@ int main(int ac, char **av)
 
 	return (EXIT_SUCCESS);
 
-		
+}		
