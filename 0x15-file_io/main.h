@@ -9,9 +9,9 @@
 #define READ_BUF_SIZE 1024
 
 #define USAGE "Usage: cp file_from file_to\n"
-#define ERR_NOREAD "Error: can't read from file %s\n"
-#define	ERR_NOWRITE "Error: can't write to %s\n"
-#define ERR_NOCLOSE "Error: can't close fd %d\n"
+#define ERR_NOREAD "Error: Can't read from file %s\n"
+#define	ERR_NOWRITE "Error: Can't write to %s\n"
+#define ERR_NOCLOSE "Error: Can't close fd %d\n"
 #define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 
 int _putchar(char c);
