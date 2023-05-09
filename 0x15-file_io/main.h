@@ -8,7 +8,7 @@
 
 #define READ_BUF_SIZE 1024
 
-#define USAGE "usage: cp file_from file_to\n"
+#define USAGE "Usage: cp file_from file_to\n"
 #define ERR_NOREAD "Error: can't read from file %s\n"
 #define	ERR_NOWRITE "Error: can't write to %s\n"
 #define ERR_NOCLOSE "Error: can't close file %d\n"
